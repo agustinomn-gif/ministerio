@@ -7,232 +7,211 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
 
-  <!-- BARRA DE NAVEGACIÓN -->
-  <nav class="bg-teal-700 text-white py-4 px-6 shadow-md">
-    <div class="max-w-3xl mx-auto flex justify-between items-center">
+  <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+  <nav class="bg-teal-800 text-white py-4 px-6 shadow-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
       <a href="../../index.html" class="flex items-center gap-2 text-teal-100 hover:text-white transition-colors font-medium text-sm">
         <i data-lucide="arrow-left" class="w-4 h-4"></i>
         Volver al inicio
       </a>
-      <span class="text-xs bg-teal-800 px-3 py-1 rounded-full text-teal-200">Agosto 2026</span>
+      <span class="text-xs bg-teal-900/50 border border-teal-600 px-3 py-1.5 rounded-full text-teal-100 tracking-wide">
+        Agosto 2026
+      </span>
     </div>
   </nav>
 
-  <!-- CONTENIDO DE LA CARTA -->
-  <main class="max-w-3xl mx-auto px-4 py-8 w-full space-y-8">
-    <article class="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-slate-200">
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="max-w-4xl mx-auto px-4 py-8 w-full flex-grow">
+    
+    <article class="bg-white p-6 md:p-12 rounded-2xl shadow-lg border border-slate-200">
       
-      <!-- ENCABEZADO CON LUGAR Y FECHA -->
-      <header class="border-b border-slate-100 pb-6 mb-6">
-        <h1 class="text-3xl font-bold text-slate-900 mb-2">Carta de Noticias - Agosto 2026</h1>
-        <div class="flex flex-wrap items-center gap-4 text-sm text-slate-500">
-          <span class="flex items-center gap-1.5">
-            <i data-lucide="calendar" class="w-4 h-4 text-teal-600"></i>
-            Sábado, 29 de agosto de 2026
-          </span>
-          <span class="flex items-center gap-1.5">
-            <i data-lucide="map-pin" class="w-4 h-4 text-teal-600"></i>
-            Lima, Perú
-          </span>
-        </div>
+      <!-- CABECERA DEL BOLETÍN -->
+      <header class="border-b border-slate-200 pb-8 mb-8 text-center">
+        <h1 class="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-4 leading-tight">
+          Boletín de Noticias
+        </h1>
+        <p class="text-sm md:text-base text-teal-700 font-medium flex items-center justify-center gap-2">
+          <i data-lucide="map-pin" class="w-4 h-4"></i>
+          Sábado, 29 de agosto de 2026, Lima[cite: 1].
+        </p>
       </header>
 
-      <!-- CUERPO DE LA CARTA -->
-      <div class="space-y-6 text-slate-700 leading-relaxed">
-        <p class="font-semibold text-lg text-teal-800">¡Bendiciones, queridos hermanos!</p>
+      <!-- CUERPO DE LECTURA (TEXTO Y FOTOS) -->
+      <div class="prose prose-slate prose-lg max-w-none text-slate-700 leading-relaxed space-y-8">
         
-        <p>
-          En esta ocasión les saludo desde la ciudad de Lima, para compartirles nuevamente y con mucha alegría lo que el Señor sigue haciendo.
+        <p class="text-xl font-medium text-slate-800 italic border-l-4 border-teal-500 pl-4">
+          "PARA QUE SEA CONOCIDO EN LA TIERRA TU CAMINO EN TODAS LAS NACIONES TU SALVACIÓN" - SALMO 67:2[cite: 1].<br><br>
+          ¡Bendiciones, queridos hermanos![cite: 1] En esta ocasión les saludo desde la ciudad de Lima, para compartirles nuevamente y con mucha alegría lo que el Señor sigue haciendo[cite: 1].
         </p>
 
+        <!-- BOTÓN DE DESCARGA PDF -->
+        <div class="my-8 p-6 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm">
+          <div class="flex items-center gap-4">
+            <div class="p-3 bg-teal-100 text-teal-700 rounded-xl">
+              <i data-lucide="file-text" class="w-8 h-8"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-lg">Versión en PDF</h3>
+              <p class="text-sm text-slate-600">Descarga o visualiza esta carta de noticias en su formato original.</p>
+            </div>
+          </div>
+          <a href="agosto-2026.pdf" target="_blank" class="w-full md:w-auto px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white rounded-xl font-semibold transition-colors flex items-center justify-center gap-2 shadow-md">
+            <i data-lucide="download" class="w-5 h-5"></i>
+            Ver / Descargar PDF
+          </a>
+        </div>
+
         <!-- SECCIÓN 1 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Traducción del NT al mazateco</h2>
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="book" class="w-6 h-6"></i> Traducción del NT al mazateco
+        </h2>
         <p>
-          Les cuento que aún no disponemos del presupuesto aproximado para la impresión del Nuevo Testamento. Por favor, oren con nosotros para que pronto podamos obtener esta información; de esta manera podremos iniciar la recaudación de fondos y lograr que muy pronto los mazatecos tengan la Palabra del Señor en sus manos y en su propia lengua.
+          Les cuento que aún no disponemos del presupuesto aproximado para la impresión del Nuevo Testamento[cite: 1]. Por favor, oren con nosotros para que pronto podamos obtener esta información; de esta manera podremos iniciar la recaudación de fondos y lograr que muy pronto los mazatecos tengan la Palabra del Señor en sus manos y en su propia lengua[cite: 1].
         </p>
 
         <!-- SECCIÓN 2 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Curso de Semántica para Alti</h2>
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="monitor-play" class="w-6 h-6"></i> Curso de Semántica para ALTI
+        </h2>
         <p>
-          En relación con el curso que he estado impartiendo de manera virtual a traductores de diversos países de Latinoamérica, la próxima semana culminaré mi participación. Ha sido una etapa desafiante, ya que a la par tengo otras responsabilidades. En varias ocasiones tuve que dar clases desde zonas de México y Perú con difícil conexión a internet, pero el Señor proveyó los medios para lograrlo. Además, varios de mis estudiantes enfrentan complicaciones para acceder a la energía eléctrica y, por ende, al internet, lo que ha hecho que acompañarlos sea un verdadero reto. Sin embargo, por la gracia de Dios han ido aprendiendo, y me llena de gozo ver el avance de cada uno de ellos.
+          En relación con el curso que he estado impartiendo de manera virtual a traductores de diversos países de Latinoamérica, la próxima semana culminaré mi participación[cite: 1]. Ha sido una etapa desafiante, ya que a la par tengo otras responsabilidades[cite: 1]. En varias ocasiones tuve que dar clases desde zonas de México y Perú con difícil conexión a internet, pero el Señor proveyó los medios para lograrlo[cite: 1].
         </p>
         <p>
-          El curso continuará con dos grupos más. Por mis actuales ocupaciones no podré enseñarles directamente, pero he dejado todo el contenido listo para que los hermanos ya asignados puedan impartirlo. Sigamos orando por ellos y por los estudiantes.
+          Además, varios de mis estudiantes enfrentan complicaciones para acceder a la energía eléctrica y, por ende, al internet, lo que ha hecho que acompañarlos sea un verdadero reto[cite: 1]. Sin embargo, por la gracia de Dios han ido aprendiendo, y me llena de gozo ver el avance de cada uno de ellos[cite: 1]. El curso continuará con dos grupos más[cite: 1]. Por mis actuales ocupaciones no podré enseñarles directamente, pero he dejado todo el contenido listo para que los hermanos ya asignados puedan impartirlo[cite: 1]. Sigamos orando por ellos y por los estudiantes[cite: 1].
         </p>
 
         <!-- SECCIÓN 3 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Llegada al Perú</h2>
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="plane-landing" class="w-6 h-6"></i> Llegada al Perú y Trabajo en la Selva
+        </h2>
         <p>
-          Como les conté en la carta anterior, salí de México la madrugada del 25 de julio y, después de dos escalas y aproximadamente 16 horas, llegué a Lima.
+          Como les conté en la carta anterior, salí de México la madrugada del 25 de julio y, después de dos escalas y aproximadamente 16 horas, llegué a Lima[cite: 1]. Al día siguiente viajé a la selva; salí por la noche y llegué cerca del mediodía a la comunidad nativa Unión de la Selva para reunirme con los hermanos yáneshas[cite: 1]. Los primeros tres días los dediqué a capacitar a Eden y Agustín, quienes estarán sirviendo en el equipo como retrotraductores[cite: 1]. La retrotraducción consiste en pasar al español el texto traducido, de la forma más literal posible[cite: 1]. Esto es vital para que el consultor (que no domina el idioma nativo) pueda revisar el trabajo[cite: 1]. Fue un tiempo muy provechoso; en tres días avanzamos excelente y quedaron capacitados para hacer una gran labor[cite: 1].
         </p>
         <p>
-          Al día siguiente viajé a la selva; salí por la noche y llegué cerca del mediodía a la comunidad nativa Unión de la Selva para reunirme con los hermanos yáneshas. Los primeros tres días los dediqué a capacitar a Eden y Agustín, quienes estarán sirviendo en el equipo como retrotraductores. La retrotraducción consiste en pasar al español el texto traducido, de la forma más literal posible. Esto es vital para que el consultor (que no domina el idioma nativo) pueda revisar el trabajo. Fue un tiempo muy provechoso; en tres días avanzamos excelente y quedaron capacitados para hacer una gran labor.
-        </p>
-
-        <!-- FOTO 1 -->
-        <figure class="my-4">
-          <img src="../../yanesha-retrotraduccion.jpg" alt="Capacitación de retrotraducción con Eden y Agustín" class="w-full rounded-xl shadow-md border border-slate-200">
-        </figure>
-
-        <p>
-          Después de esos tres días, viajé aproximadamente 10 horas selva adentro para encontrarme con el equipo de hermanos de la Iglesia Getsemaní, que vinieron desde México para servir en la base misionera entre los nomatsigengas. Pude estar con ellos cuatro días. Entre las diversas actividades que realizamos, la mayor parte del tiempo estuve apoyando en la construcción de la "Casa de la Biblia". Este espacio será utilizado en el futuro por el equipo de traducción y contará con áreas tanto para trabajar como para descansar. Les pido sus oraciones para que esta obra, que lleva cerca de un año en proceso, pueda concluirse muy pronto.
+          Después de esos tres días, viajé aproximadamente 10 horas selva adentro para encontrarme con el equipo de hermanos de la Iglesia Getsemaní, que vinieron desde México para servir en la base misionera entre los nomatsigengas[cite: 1]. Pude estar con ellos cuatro días[cite: 1]. Entre las diversas actividades que realizamos, la mayor parte del tiempo estuve apoyando en la construcción de la "Casa de la Biblia"[cite: 1]. Este espacio será utilizado en el futuro por el equipo de traducción y contará con áreas tanto para trabajar como para descansar[cite: 1]. Les pido sus oraciones para que esta obra, que lleva cerca de un año en proceso, pueda concluirse muy pronto[cite: 1].
         </p>
         <p>
-          Tras esos cuatro días, retorné a Unión de la Selva con los hermanos yáneshas, esta vez para trabajar con Sara, Rolando y Jerónimo, quienes conforman el equipo de traducción. Los capacité en la "comprobación de comunidad", una fase donde el borrador se somete a consulta con los hablantes para evaluar su naturalidad y comprensión. Con esto se recaban comentarios valiosos para mejorar el texto final.
-        </p>
-
-        <!-- FOTO 2 -->
-        <figure class="my-4">
-          <img src="../../yanesha-equipo.jpg" alt="Equipo de traducción Yánesha" class="w-full rounded-xl shadow-md border border-slate-200">
-        </figure>
-
-        <p>
-          Estas capacitaciones permitirán avanzar con la traducción del Nuevo Testamento, así como preparar la consultoría y aprobación de los libros que los hermanos ya tienen traducidos: 1 y 2 de Samuel, y Jonás. Oremos por este equipo de traductores. Es un grupo con muchas necesidades: todos son adultos mayores, enfrentan problemas de salud y batallan con la tecnología (¡solo esta semana pasé una hora por videollamada intentando ayudarles a imprimir una hoja a distancia!).
+          Tras esos cuatro días, retorné a Unión de la Selva con los hermanos yáneshas, esta vez para trabajar con Sara, Rolando y Jerónimo, quienes conforman el equipo de traducción[cite: 1]. Los capacité en la "comprobación de comunidad", una fase donde el borrador se somete a consulta con los hablantes para evaluar su naturalidad y comprensión[cite: 1]. Con esto se recaban comentarios valiosos para mejorar el texto final[cite: 1]. Estas capacitaciones permitirán avanzar con la traducción del Nuevo Testamento, así como preparar la consultoría y aprobación de los libros que los hermanos ya tienen traducidos: 1 y 2 de Samuel, y Jonás[cite: 1]. Oremos por este equipo de traductores[cite: 1]. Es un grupo con muchas necesidades: todos son adultos mayores, enfrentan problemas de salud y batallan con la tecnología (¡solo esta semana pasé una hora por videollamada intentando ayudarles a imprimir una hoja a distancia!)[cite: 1].
         </p>
 
         <!-- SECCIÓN 4 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Curso Internacional de Lingüística, Traducción y Alfabetización (CILTA)</h2>
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="graduation-cap" class="w-6 h-6"></i> CILTA (Curso Internacional de Lingüística, Traducción y Alfabetización)
+        </h2>
         <p>
-          El 9 de agosto regresé a la ciudad de Lima y el 10 arrancaron las clases del segundo semestre en CILTA. Este año se están capacitando 9 estudiantes, preparándose para salir al campo o para adquirir mejores herramientas y servir entre los pueblos sin Biblia.
+          El 9 de agosto regresé a la ciudad de Lima y el 10 arrancaron las clases del segundo semestre en CILTA[cite: 1]. Este año se están capacitando 9 estudiantes, preparándose para salir al campo o para adquirir mejores herramientas y servir entre los pueblos sin Biblia[cite: 1]. La primera materia que impartí durante dos semanas fue Principios de Traducción, donde los estudiantes aprenden metodologías, técnicas y herramientas que serán útiles en el campo[cite: 1]. Esta semana comencé a impartir una nueva materia que hemos desarrollado para este año: Facilitación de Proyectos de Traducción[cite: 1]. Su propósito es capacitar a los alumnos en el acompañamiento práctico de todo el proceso de traducción, desde el contacto inicial con las comunidades hasta la publicación, distribución y uso de la obra[cite: 1].
         </p>
-        <p>
-          La primera materia que impartí durante dos semanas fue Principios de Traducción, donde los estudiantes aprenden metodologías, técnicas y herramientas que serán útiles en el campo. Esta semana comencé a impartir una nueva materia que hemos desarrollado para este año: Facilitación de Proyectos de Traducción. Su propósito es capacitar a los alumnos en el acompañamiento práctico de todo el proceso de traducción, desde el contacto inicial con las comunidades hasta la publicación, distribución y uso de la obra.
-        </p>
-
-        <!-- FOTO 3 -->
-        <figure class="my-4">
-          <img src="../../cilta-clase.jpg" alt="Clase impartida en CILTA" class="w-full rounded-xl shadow-md border border-slate-200">
-        </figure>
 
         <!-- SECCIÓN 5 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Estudios de Hebreo en Israel</h2>
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="globe" class="w-6 h-6"></i> Estudios de Hebreo en Israel
+        </h2>
         <p>
-          En mi caminar con el Señor durante los últimos años, he visto Su mano guiándome, proveyendo y cambiando mis planes una y otra vez; este año no ha sido la excepción. Hace dos semanas recibí la invitación para capacitarme en el idioma hebreo a través de una beca en la ciudad de Jerusalén, Israel. Aunque mi proceso de postulación fue extemporáneo, el Señor obró para que pudiera cumplir con los requisitos, de tal manera que ahora solo queda que el Estado de Israel emita la visa que requiero para residir allí por 9 meses.
+          En mi caminar con el Señor durante los últimos años, he visto Su mano guiándome, proveyendo y cambiando mis planes una y otra vez; este año no ha sido la excepción[cite: 1]. Hace dos semanas recibí la invitación para capacitarme en el idioma hebreo a través de una beca en la ciudad de Jerusalén, Israel[cite: 1]. Aunque mi proceso de postulación fue extemporáneo, el Señor obró para que pudiera cumplir con los requisitos, de tal manera que ahora solo queda que el Estado de Israel emita la visa que requiero para residir allí por 9 meses[cite: 1]. Esta será una nueva experiencia de caminar con el Señor[cite: 1]. Voy a una parte del mundo donde las costumbres, la comida y el idioma son completamente distintos a lo que tenemos de este lado del mundo[cite: 1]. Serán 9 meses en los que tendré que adaptarme a una cultura diferente y aprender a comunicarme únicamente en hebreo[cite: 1].
         </p>
         <p>
-          Esta será una nueva experiencia de caminar con el Señor. Voy a una parte del mundo donde las costumbres, la comida y el idioma son completamente distintos a lo que tenemos de este lado del mundo. Serán 9 meses en los que tendré que adaptarme a una cultura diferente y aprender a comunicarme únicamente en hebreo.
-        </p>
-        <p>
-          ¿Por qué he aceptado este desafío? Porque para el ministerio que el Señor me ha entregado, requiero dominar las lenguas bíblicas para hacer un mejor trabajo de traducción, capacitación y acompañamiento de otros equipos. Esta es una oportunidad por la que he orado al Señor, y como siempre, Él sabe sorprendernos: aprenderé este idioma en la misma ciudad donde el Señor Jesucristo predicó y entregó Su vida por nosotros.
-        </p>
-        <p>
-          Por esta razón viajaré a México en tres semanas para visitar iglesias, ver a mi familia y hacer los últimos trámites antes de partir a Israel la segunda semana de octubre. Oren por mí, por los trámites pendientes y para que el Señor siga abriendo el camino.
+          ¿Por qué he aceptado este desafío? Porque para el ministerio que el Señor me ha entregado, requiero dominar las lenguas bíblicas para hacer un mejor trabajo de traducción, capacitación y acompañamiento de otros equipos[cite: 1]. Esta es una oportunidad por la que he orado al Señor, y como siempre, Él sabe sorprendernos: aprenderé este idioma en la misma ciudad donde el Señor Jesucristo predicó y entregó Su vida por nosotros[cite: 1]. Por esta razón viajaré a México en tres semanas para visitar iglesias, ver a mi familia y hacer los últimos trámites antes de partir a Israel la segunda semana de octubre[cite: 1]. Oren por mí, por los trámites pendientes y para que el Señor siga abriendo el camino[cite: 1].
         </p>
 
-        <!-- FOTO 4 -->
-        <figure class="my-4">
-          <img src="../../whole-word-institute.jpg" alt="Whole Word Institute" class="w-full rounded-xl shadow-md border border-slate-200">
-        </figure>
-
-        <!-- SECCIÓN 6 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Agradecimientos</h2>
-        <p>
-          No me queda más que agradecerles enormemente por "sostener la cuerda" para que yo pueda estar en el campo, contribuyendo a que la Palabra llegue a cada pueblo en la lengua que hablan y entienden. Agradezco sus oraciones, pues en todo momento he sentido su respaldo. Agradezco sus palabras de ánimo, que siempre llegan en el momento necesario, y sus ofrendas, que envían con fidelidad y sacrificio para sostenerme económicamente. Sigamos juntos haciendo la Misión de Dios, porque solo como un cuerpo, una sola iglesia, podremos culminar nuestra encomienda. Oro para que el Señor les retribuya en gran manera por el amor que me demuestran en Él.
-        </p>
-
-        <p class="pt-2 font-medium text-teal-800">
-          Su hermano en Cristo,<br>
-          <span class="font-bold text-slate-900 text-lg">Agustino Martínez</span>
-        </p>
+        <!-- DESPEDIDA / GRATITUD -->
+        <div class="mt-12 bg-slate-50 p-6 rounded-xl border border-slate-200">
+          <p>
+            No me queda más que agradecerles enormemente por "sostener la cuerda" para que yo pueda estar en el campo, contribuyendo a que la Palabra llegue a cada pueblo en la lengua que hablan y entienden[cite: 1]. Agradezco sus oraciones, pues en todo momento he sentido su respaldo[cite: 1]. Agradezco sus palabras de ánimo, que siempre llegan en el momento necesario, y sus ofrendas, que envían con fidelidad y sacrificio para sostenerme económicamente[cite: 1]. Sigamos juntos haciendo la Misión de Dios, porque solo como un cuerpo, una sola iglesia, podremos culminar nuestra encomienda[cite: 1]. Oro para que el Señor les retribuya en gran manera por el amor que me demuestran en Él[cite: 1].
+          </p>
+          <p class="font-bold text-teal-900 mt-6">
+            Su hermano en Cristo,<br>
+            <span class="text-xl font-serif">Agustino Martínez</span>[cite: 1]
+          </p>
+        </div>
       </div>
 
-      <!-- BLOQUES DE MOTIVOS DE AGRADECIMIENTO Y PETICIONES DE ORACIÓN -->
-      <div class="mt-10 grid md:grid-cols-2 gap-6 border-t border-slate-100 pt-8">
-        
-        <!-- AGRADECIMIENTOS -->
-        <div class="bg-emerald-50/60 border border-emerald-200 rounded-xl p-5">
-          <h3 class="font-bold text-emerald-900 flex items-center gap-2 text-lg mb-3">
-            <i data-lucide="sparkles" class="w-5 h-5 text-emerald-600"></i>
+      <!-- SECCIÓN DE ORACIÓN Y AGRADECIMIENTO (TARJETAS DIVIDIDAS) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+        <!-- Agradecimientos -->
+        <div class="bg-teal-50 p-6 rounded-2xl border border-teal-100 shadow-sm">
+          <h3 class="text-xl font-bold text-teal-900 mb-4 flex items-center gap-2">
+            <i data-lucide="heart-handshake" class="w-6 h-6 text-teal-600"></i>
             Motivos de Agradecimiento
           </h3>
-          <ul class="space-y-2 text-sm text-emerald-950">
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por proveer los medios y la conexión a internet para impartir el curso de Semántica desde zonas difíciles en México y Perú.</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por el gozo de ver el aprendizaje de los traductores latinoamericanos, a pesar de sus limitaciones de energía eléctrica e internet.</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por la llegada segura a Lima y el traslado sin contratiempos hasta la comunidad Unión de la Selva.</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por el tiempo provechoso enseñando a los hermanos yáneshas.</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por Su guía y por obrar el milagro de cumplir los requisitos de manera extemporánea para la beca de hebreo en Jerusalén.</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por el amor, las oraciones, las palabras de ánimo y el sustento económico fiel de los hermanos que apoyan el ministerio.</li>
+          <ul class="space-y-3 text-teal-800 text-sm">
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"></i> <span>Por proveer los medios y la conexión a internet para impartir el curso de Semántica desde zonas difíciles en México y Perú[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"></i> <span>Por el gozo de ver el aprendizaje de los traductores latinoamericanos, a pesar de sus limitaciones de energía eléctrica e internet[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"></i> <span>Por la llegada segura a Lima y el traslado sin contratiempos hasta la comunidad Unión de la Selva[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"></i> <span>Por el tiempo provechoso enseñando a los hermanos yáneshas[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"></i> <span>Por Su guía y por obrar el milagro de cumplir los requisitos de manera extemporánea para la beca de hebreo en Jerusalén[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"></i> <span>Por el amor, las oraciones, las palabras de ánimo y el sustento económico fiel de los hermanos que apoyan el ministerio[cite: 1].</span></li>
           </ul>
         </div>
 
-        <!-- PETICIONES DE ORACIÓN -->
-        <div class="bg-amber-50/60 border border-amber-200 rounded-xl p-5">
-          <h3 class="font-bold text-amber-900 flex items-center gap-2 text-lg mb-3">
-            <i data-lucide="heart-handshake" class="w-5 h-5 text-amber-600"></i>
+        <!-- Oración -->
+        <div class="bg-orange-50 p-6 rounded-2xl border border-orange-100 shadow-sm">
+          <h3 class="text-xl font-bold text-orange-900 mb-4 flex items-center gap-2">
+            <i data-lucide="hands" class="w-6 h-6 text-orange-600"></i>
             Peticiones de Oración
           </h3>
-          <ul class="space-y-2 text-sm text-amber-950">
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Para que pronto se tenga el presupuesto de impresión, se pueda iniciar la recaudación y la comunidad tenga la Palabra en sus manos.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Por los dos grupos de estudiantes que continúan el curso y por los maestros asignados que lo estarán impartiendo.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Por la pronta conclusión de esta obra de construcción en la base misionera entre los nomatsigengas.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Por la salud, fortaleza y adaptación tecnológica de los traductores yáneshas.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Para que el Estado de Israel emita pronto la visa necesaria para los 9 meses de estudio.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Por el viaje a México en unas semanas, los trámites finales pendientes y el viaje definitivo a Israel en la segunda semana de octubre. Que el Señor siga abriendo el camino.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Por gracia y sabiduría para el proceso de adaptación a una nueva cultura, alimentación y el aprendizaje exclusivo del idioma hebreo.</li>
+          <ul class="space-y-3 text-orange-900 text-sm">
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Para que pronto se tenga el presupuesto de impresión, se pueda iniciar la recaudación y la comunidad tenga la Palabra en sus manos[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Por los dos grupos de estudiantes que continúan el curso y por los maestros asignados que lo estarán impartiendo[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Por la pronta conclusión de esta obra de construcción en la base misionera entre los nomatsigengas[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Por la salud, fortaleza y adaptación tecnológica de los traductores yáneshas[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Para que el Estado de Israel emita pronto la visa necesaria para los 9 meses de estudio[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Por el viaje a México en unas semanas, los trámites finales pendientes y el viaje definitivo a Israel en la segunda semana de octubre. Que el Señor siga abriendo el camino[cite: 1].</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Por gracia y sabiduría para el proceso de adaptación a una nueva cultura, alimentación y el aprendizaje exclusivo del idioma hebreo[cite: 1].</span></li>
           </ul>
         </div>
-
       </div>
 
-      <!-- DESCARGA EN VERSIÓN PDF -->
-      <div class="mt-8 p-4 bg-teal-50 border border-teal-200 rounded-xl flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <i data-lucide="file-text" class="w-8 h-8 text-teal-600"></i>
+      <!-- SECCIÓN DE DONACIONES Y CONTACTO -->
+      <div class="mt-12 bg-slate-900 text-white p-8 rounded-2xl shadow-lg">
+        <p class="text-slate-300 mb-6 text-center italic">
+          "Si el Señor pone en su corazón el deseo de contribuir económicamente a este ministerio, puede hacerlo a través de los siguientes medios:"[cite: 1]
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-slate-700 pt-6">
+          <!-- Cuentas -->
           <div>
-            <p class="font-bold text-teal-900 text-sm">Descargar Carta en PDF</p>
-            <p class="text-xs text-teal-700">Obtén la versión diseñada para imprimir o compartir.</p>
+            <h4 class="font-bold text-teal-400 mb-3 flex items-center gap-2 uppercase tracking-wide text-sm">
+              <i data-lucide="credit-card" class="w-4 h-4"></i> Datos Bancarios
+            </h4>
+            <div class="space-y-3 text-sm text-slate-300">
+              <p><strong class="text-white">Cuenta HSBC</strong></p>
+              <p>CLABE: <span class="font-mono text-teal-300 bg-slate-800 px-2 py-1 rounded">021670064860236032</span>[cite: 1]</p>
+              <p>Nombre: AGUSTINO MARTINEZ VAZQUEZ[cite: 1]</p>
+              <p class="mt-4">
+                <strong class="text-white">PayPal:</strong> 
+                <a href="https://paypal.me/agustinomartinez" target="_blank" class="text-teal-300 hover:underline inline-flex items-center gap-1 font-medium">
+                  @agustinomartinez[cite: 1] <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+          
+          <!-- Contacto -->
+          <div>
+            <h4 class="font-bold text-teal-400 mb-3 flex items-center gap-2 uppercase tracking-wide text-sm">
+              <i data-lucide="phone" class="w-4 h-4"></i> Contacto
+            </h4>
+            <div class="space-y-3 text-sm text-slate-300">
+              <p class="flex items-center gap-2">
+                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400 flex-shrink-0"></i> 
+                <a href="https://wa.me/5219511232271" target="_blank" class="text-emerald-300 hover:underline inline-flex items-center gap-1 font-medium">
+                  +52 951 123 2271[cite: 1] <i data-lucide="external-link" class="w-3 h-3"></i>
+                </a>
+              </p>
+              <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-slate-400"></i> agusmarvaz@gmail.com[cite: 1]</p>
+            </div>
           </div>
         </div>
-        <a href="#" target="_blank" class="px-4 py-2 bg-teal-700 hover:bg-teal-800 text-white rounded-lg text-xs font-semibold transition-colors flex items-center gap-1.5">
-          <i data-lucide="download" class="w-3.5 h-3.5"></i>
-          Descargar
-        </a>
       </div>
 
     </article>
-
-    <!-- DATOS DE CONTACTO Y BANCARIOS (AL FINAL DE PÁGINA COM EN JULIO) -->
-    <section class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
-      <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-3">
-        <i data-lucide="wallet" class="w-5 h-5 text-teal-600"></i>
-        Información de Apoyo y Contacto
-      </h3>
-      
-      <div class="grid md:grid-cols-2 gap-6 text-sm">
-        
-        <!-- DATOS BANCARIOS -->
-        <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
-          <h4 class="font-bold text-teal-800 uppercase text-xs tracking-wider">Datos Bancarios para Ofrendas</h4>
-          <p class="text-slate-600"><span class="font-semibold text-slate-800">Titular:</span> Agustino Martínez Vázquez</p>
-          <p class="text-slate-600"><span class="font-semibold text-slate-800">Banco:</span> BBVA / México</p>
-          <p class="text-slate-600"><span class="font-semibold text-slate-800">CLABE Interbancaria:</span> 012 180 015 123 456 789</p>
-          <p class="text-slate-600"><span class="font-semibold text-slate-800">Número de Cuenta:</span> 151 234 5678</p>
-        </div>
-
-        <!-- CONTACTO DIRECTO -->
-        <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
-          <h4 class="font-bold text-teal-800 uppercase text-xs tracking-wider">Contacto Directo</h4>
-          <p class="text-slate-600 flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4 text-slate-400"></i>
-            agustino.martinez@ejemplo.com
-          </p>
-          <p class="text-slate-600 flex items-center gap-2">
-            <i data-lucide="phone" class="w-4 h-4 text-slate-400"></i>
-            +52 (55) 1234 5678 / +51 987 654 321
-          </p>
-          <p class="text-slate-500 text-xs pt-2 border-t border-slate-200">
-            Si deseas sumarte a la red de oración o apoyo mensual, no dudes en escribirnos directamente.
-          </p>
-        </div>
-
-      </div>
-    </section>
   </main>
 
-  <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm border-t border-slate-800">
-    <p>© 2026 Agustino Martínez. Todos los derechos reservados.</p>
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm mt-auto border-t border-slate-800">
+    <p>© 2026 Agustino Martínez Vázquez. Ministerio.</p>
   </footer>
 
   <script>
