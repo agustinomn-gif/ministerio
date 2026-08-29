@@ -3,239 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carta de Noticias - Agosto 2026</title>
+  <title>Carta de Noticias - Julio 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between">
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col">
 
-  <!-- BARRA DE NAVEGACIÓN -->
-  <nav class="bg-teal-700 text-white py-4 px-6 shadow-md">
-    <div class="max-w-3xl mx-auto flex justify-between items-center">
+  <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+  <nav class="bg-teal-800 text-white py-4 px-6 shadow-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
       <a href="../../index.html" class="flex items-center gap-2 text-teal-100 hover:text-white transition-colors font-medium text-sm">
         <i data-lucide="arrow-left" class="w-4 h-4"></i>
         Volver al inicio
       </a>
-      <span class="text-xs bg-teal-800 px-3 py-1 rounded-full text-teal-200">Agosto 2026</span>
+      <span class="text-xs bg-teal-900/50 border border-teal-600 px-3 py-1.5 rounded-full text-teal-100 tracking-wide">
+        Julio 2026
+      </span>
     </div>
   </nav>
 
-  <!-- CONTENIDO DE LA CARTA -->
-  <main class="max-w-3xl mx-auto px-4 py-8 w-full space-y-8">
-    <article class="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-slate-200">
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="max-w-4xl mx-auto px-4 py-8 w-full flex-grow">
+    
+    <article class="bg-white p-6 md:p-12 rounded-2xl shadow-lg border border-slate-200">
       
-      <!-- ENCABEZADO CON LUGAR Y FECHA -->
-      <header class="border-b border-slate-100 pb-6 mb-6">
-        <h1 class="text-3xl font-bold text-slate-900 mb-2">Carta de Noticias - Agosto 2026</h1>
-        <div class="flex flex-wrap items-center gap-4 text-sm text-slate-500">
-          <span class="flex items-center gap-1.5">
-            <i data-lucide="calendar" class="w-4 h-4 text-teal-600"></i>
-            Sábado, 29 de agosto de 2026
-          </span>
-          <span class="flex items-center gap-1.5">
-            <i data-lucide="map-pin" class="w-4 h-4 text-teal-600"></i>
-            Lima, Perú
-          </span>
-        </div>
+      <!-- CABECERA DEL BOLETÍN -->
+      <header class="border-b border-slate-200 pb-8 mb-8 text-center">
+        <h1 class="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-4 leading-tight">
+          Boletín de Noticias
+        </h1>
+        <p class="text-sm md:text-base text-teal-700 font-medium flex items-center justify-center gap-2">
+          <i data-lucide="map-pin" class="w-4 h-4"></i>
+          Jueves, 23 de julio de 2026, Sierra Mazateca, México.
+        </p>
       </header>
 
-      <!-- CUERPO DE LA CARTA -->
-      <div class="space-y-6 text-slate-700 leading-relaxed">
-        <p class="font-semibold text-lg text-teal-800">¡Bendiciones, queridos hermanos!</p>
+      <!-- CUERPO DE LECTURA (TEXTO Y FOTOS) -->
+      <div class="prose prose-slate prose-lg max-w-none text-slate-700 leading-relaxed space-y-8">
         
-        <p>
-          En esta ocasión les saludo desde la ciudad de Lima, para compartirles nuevamente y con mucha alegría lo que el Señor sigue haciendo.
+        <p class="text-xl font-medium text-slate-800 italic border-l-4 border-teal-500 pl-4">
+          Queridos hermanos, es un gusto saludarles nuevamente y compartirles lo que el Señor ha hecho durante estos días.
         </p>
 
+        <!-- BOTÓN DE DESCARGA PDF -->
+        <div class="my-8 p-6 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm">
+          <div class="flex items-center gap-4">
+            <div class="p-3 bg-teal-100 text-teal-700 rounded-xl">
+              <i data-lucide="file-text" class="w-8 h-8"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-lg">Versión en PDF</h3>
+              <p class="text-sm text-slate-600">Descarga o visualiza esta carta de noticias en su formato original.</p>
+            </div>
+          </div>
+          <a href="julio-2026.pdf" target="_blank" class="w-full md:w-auto px-6 py-3 bg-teal-700 hover:bg-teal-800 text-white rounded-xl font-semibold transition-colors flex items-center justify-center gap-2 shadow-md">
+            <i data-lucide="download" class="w-5 h-5"></i>
+            Ver / Descargar PDF
+          </a>
+        </div>
+
         <!-- SECCIÓN 1 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Traducción del NT al mazateco</h2>
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="book" class="w-6 h-6"></i> Traducción del NT al mazateco
+        </h2>
         <p>
-          Les cuento que aún no disponemos del presupuesto aproximado para la impresión del Nuevo Testamento. Por favor, oren con nosotros para que pronto podamos obtener esta información; de esta manera podremos iniciar la recaudación de fondos y lograr que muy pronto los mazatecos tengan la Palabra del Señor en sus manos y en su propia lengua.
+          Agradezco sus oraciones por el trabajo de traducción del Nuevo Testamento (NT). La próxima semana ya tendremos un presupuesto aproximado y comenzaremos la recaudación de fondos para la publicación. Que el Señor siga guiando cada detalle para que pronto los mazatecos puedan tener Su palabra impresa en sus manos.
         </p>
 
         <!-- SECCIÓN 2 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Curso de Semántica para Alti</h2>
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="graduation-cap" class="w-6 h-6"></i> Diplomado en Puebla
+        </h2>
         <p>
-          En relación con el curso que he estado impartiendo de manera virtual a traductores de diversos países de Latinoamérica, la próxima semana culminaré mi participación. Ha sido una etapa desafiante, ya que a la par tengo otras responsabilidades. En varias ocasiones tuve que dar clases desde zonas de México y Perú con difícil conexión a internet, pero el Señor proveyó los medios para lograrlo. Además, varios de mis estudiantes enfrentan complicaciones para acceder a la energía eléctrica y, por ende, al internet, lo que ha hecho que acompañarlos sea un verdadero reto. Sin embargo, por la gracia de Dios han ido aprendiendo, y me llena de gozo ver el avance de cada uno de ellos.
-        </p>
-        <p>
-          El curso continuará con dos grupos más. Por mis actuales ocupaciones no podré enseñarles directamente, pero he dejado todo el contenido listo para que los hermanos ya asignados puedan impartirlo. Sigamos orando por ellos y por los estudiantes.
-        </p>
-
-        <!-- SECCIÓN 3 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Llegada al Perú</h2>
-        <p>
-          Como les conté en la carta anterior, salí de México la madrugada del 25 de julio y, después de dos escalas y aproximadamente 16 horas, llegué a Lima.
-        </p>
-        <p>
-          Al día siguiente viajé a la selva; salí por la noche y llegué cerca del mediodía a la comunidad nativa Unión de la Selva para reunirme con los hermanos yáneshas. Los primeros tres días los dediqué a capacitar a Eden y Agustín, quienes estarán sirviendo en el equipo como retrotraductores. La retrotraducción consiste en pasar al español el texto traducido, de la forma más literal posible. Esto es vital para que el consultor (que no domina el idioma nativo) pueda revisar el trabajo. Fue un tiempo muy provechoso; en tres días avanzamos excelente y quedaron capacitados para hacer una gran labor.
+          Después de un mes bastante agotador, pero de mucha bendición, pudimos culminar el Diplomado Internacional en Lingüística Aplicada, donde se capacitó a estudiantes de diversas edades, trasfondos y orígenes. Alrededor de doce de ellos son creyentes interesados en servir en las misiones y en la traducción (algunos de los cuales ya lo hacen); el resto tiene interés en diversas áreas de servicio en comunidades indígenas.
         </p>
 
         <!-- FOTO 1 -->
-        <figure class="my-4">
-          <img src="../../yanesha-retrotraduccion.jpg" alt="Capacitación de retrotraducción con Eden y Agustín" class="w-full rounded-xl shadow-md border border-slate-200">
+        <figure class="my-8">
+          <img src="clases.png" alt="Dando clases de semántica" class="rounded-xl shadow-md w-full object-cover">
+          <figcaption class="text-center text-sm text-slate-500 mt-3 font-medium">Dando clases de semántica</figcaption>
         </figure>
 
         <p>
-          Después de esos tres días, viajé aproximadamente 10 horas selva adentro para encontrarme con el equipo de hermanos de la Iglesia Getsemaní, que vinieron desde México para servir en la base misionera entre los nomatsigengas. Pude estar con ellos cuatro días. Entre las diversas actividades que realizamos, la mayor parte del tiempo estuve apoyando en la construcción de la "Casa de la Biblia". Este espacio será utilizado en el futuro por el equipo de traducción y contará con áreas tanto para trabajar como para descansar. Les pido sus oraciones para que esta obra, que lleva cerca de un año en proceso, pueda concluirse muy pronto.
+          Quizás surja la pregunta de por qué los misioneros cristianos capacitamos a personas no creyentes en una universidad pública. La respuesta es que las comunidades indígenas deben estar preparadas para recibir la palabra del Señor en sus propios idiomas: necesitan usar su lengua, así como saber leerla y escribirla para tener contacto con las Escrituras traducidas. Al hacer esto, preparamos el terreno para la llegada del Evangelio, ya que muchas de las personas capacitadas, aunque no son creyentes, están contribuyendo a este propósito, aun sin saberlo.
         </p>
         <p>
-          Tras esos cuatro días, retorné a Unión de la Selva con los hermanos yáneshas, esta vez para trabajar con Sara, Rolando y Jerónimo, quienes conforman el equipo de traducción. Los capacité en la "comprobación de comunidad", una fase donde el borrador se somete a consulta con los hablantes para evaluar su naturalidad y comprensión. Con esto se recaban comentarios valiosos para mejorar el texto final.
+          Oremos por todos los estudiantes que participaron este año, para que el Señor los use como bendición en las comunidades indígenas. Ahora tenemos cuarenta personas más capacitadas, entre ellas, trece que irán pronto al campo misionero. Sigamos orando por este curso que bendice tanto a nuestra nación, para que las relaciones con la universidad anfitriona se mantengan e incluso mejoren.
         </p>
 
         <!-- FOTO 2 -->
-        <figure class="my-4">
-          <img src="../../yanesha-equipo.jpg" alt="Equipo de traducción Yánesha" class="w-full rounded-xl shadow-md border border-slate-200">
+        <figure class="my-8">
+          <img src="dila.png" alt="Estudiantes y profesores del DILA 2026" class="rounded-xl shadow-md w-full object-cover">
+          <figcaption class="text-center text-sm text-slate-500 mt-3 font-medium">Estudiantes y profesores del DILA 2026</figcaption>
         </figure>
 
+        <!-- SECCIÓN 3 -->
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="monitor-play" class="w-6 h-6"></i> Curso de Semántica para Alti
+        </h2>
         <p>
-          Estas capacitaciones permitirán avanzar con la traducción del Nuevo Testamento, así como preparar la consultoría y aprobación de los libros que los hermanos ya tienen traducidos: 1 y 2 de Samuel, y Jonás. Oremos por este equipo de traductores. Es un grupo con muchas necesidades: todos son adultos mayores, enfrentan problemas de salud y batallan con la tecnología (¡solo esta semana pasé una hora por videollamada intentando ayudarles a imprimir una hoja a distancia!).
-        </p>
-
-        <!-- SECCIÓN 4 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Curso Internacional de Lingüística, Traducción y Alfabetización (CILTA)</h2>
-        <p>
-          El 9 de agosto regresé a la ciudad de Lima y el 10 arrancaron las clases del segundo semestre en CILTA. Este año se están capacitando 9 estudiantes, preparándose para salir al campo o para adquirir mejores herramientas y servir entre los pueblos sin Biblia.
+          La semana pasada comencé el curso de Semántica para hermanos traductores de la Biblia de diferentes nacionalidades y lenguas; tenemos alumnos de México, Venezuela, Paraguay y Colombia, cada uno hablante de su lengua materna. Las dos primeras clases que impartí han sido de enorme bendición. Ver cómo los hermanos crecen en conocimiento y lo aplican en su trabajo es lo que me anima a seguir dando estas capacitaciones.
         </p>
         <p>
-          La primera materia que impartí durante dos semanas fue Principios de Traducción, donde los estudiantes aprenden metodologías, técnicas y herramientas que serán útiles en el campo. Esta semana comencé a impartir una nueva materia que hemos desarrollado para este año: Facilitación de Proyectos de Traducción. Su propósito es capacitar a los alumnos en el acompañamiento práctico de todo el proceso de traducción, desde el contacto inicial con las comunidades hasta la publicación, distribución y uso de la obra.
+          Oremos por cada hermano, para que todos puedan culminar el curso. Muchos enfrentan limitaciones como la falta de acceso a internet, fallas eléctricas o un menor dominio del español y de conceptos básicos de gramática. Con la ayuda del Señor, en las próximas semanas serán equipados con herramientas y conocimientos que les ayudarán a ejercer un mejor trabajo para Él.
         </p>
 
         <!-- FOTO 3 -->
-        <figure class="my-4">
-          <img src="../../cilta-clase.jpg" alt="Clase impartida en CILTA" class="w-full rounded-xl shadow-md border border-slate-200">
+        <figure class="my-8">
+          <img src="alti.png" alt="Dando clases de semántica para ALTI" class="rounded-xl shadow-md w-full object-cover border border-slate-200">
+          <figcaption class="text-center text-sm text-slate-500 mt-3 font-medium">Dando clases de semántica para ALTI</figcaption>
         </figure>
 
-        <!-- SECCIÓN 5 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Estudios de Hebreo en Israel</h2>
+        <!-- SECCIÓN 4 -->
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="users" class="w-6 h-6"></i> Movilización
+        </h2>
         <p>
-          En mi caminar con el Señor durante los últimos años, he visto Su mano guiándome, proveyendo y cambiando mis planes una y otra vez; este año no ha sido la excepción. Hace dos semanas recibí la invitación para capacitarme en el idioma hebreo a través de una beca en la ciudad de Jerusalén, Israel. Aunque mi proceso de postulación fue extemporáneo, el Señor obró para que pudiera cumplir con los requisitos, de tal manera que ahora solo queda que el Estado de Israel emita la visa que requiero para residir allí por 9 meses.
-        </p>
-        <p>
-          Esta será una nueva experiencia de caminar con el Señor. Voy a una parte del mundo donde las costumbres, la comida y el idioma son completamente distintos a lo que tenemos de este lado del mundo. Serán 9 meses en los que tendré que adaptarme a una cultura diferente y aprender a comunicarme únicamente en hebreo.
-        </p>
-        <p>
-          ¿Por qué he aceptado este desafío? Porque para el ministerio que el Señor me ha entregado, requiero dominar las lenguas bíblicas para hacer un mejor trabajo de traducción, capacitación y acompañamiento de otros equipos. Esta es una oportunidad por la que he orado al Señor, y como siempre, Él sabe sorprendernos: aprenderé este idioma en la misma ciudad donde el Señor Jesucristo predicó y entregó Su vida por nosotros.
-        </p>
-        <p>
-          Por esta razón viajaré a México en tres semanas para visitar iglesias, ver a mi familia y hacer los últimos trámites antes de partir a Israel la segunda semana de octubre. Oren por mí, por los trámites pendientes y para que el Señor siga abriendo el camino.
+          Durante mi estancia en la ciudad de Puebla tuve la enorme bendición de visitar distintas iglesias. Pude compartirles la palabra del Señor y, a su vez, fui grandemente bendecido por ellos. Las congregaciones en las que estuve por primera vez fueron la Iglesia Bautista Príncipe de Paz y la Iglesia Bautista Berea. Estoy sumamente agradecido de que me recibieran aun sin conocerme personalmente; mi oración es que sigan extendiendo el reino del Señor en su ciudad y hasta lo último de la tierra. La última iglesia que visité en Puebla fue la Iglesia Bautista Getsemaní de Cholula, a quienes compartí los avances del ministerio que el Señor me permite realizar. Como siempre, fue una bendición estar con ellos.
         </p>
 
         <!-- FOTO 4 -->
-        <figure class="my-4">
-          <img src="../../whole-word-institute.jpg" alt="Whole Word Institute" class="w-full rounded-xl shadow-md border border-slate-200">
+        <figure class="my-8">
+          <img src="berea.png" alt="En la iglesia Bautista de Puebla Berea" class="rounded-xl shadow-md w-full object-cover">
+          <figcaption class="text-center text-sm text-slate-500 mt-3 font-medium">En la iglesia Bautista de Puebla Berea</figcaption>
         </figure>
 
-        <!-- SECCIÓN 6 -->
-        <h2 class="text-xl font-bold text-slate-900 pt-2 border-t border-slate-100">Agradecimientos</h2>
+        <!-- FOTO NUEVA: GETSEMANÍ -->
+        <figure class="my-8">
+          <img src="getsemani.png" alt="En la Iglesia Bautista Getsemaní de Cholula" class="rounded-xl shadow-md w-full object-cover">
+          <figcaption class="text-center text-sm text-slate-500 mt-3 font-medium">En la Iglesia Bautista Getsemaní de Cholula</figcaption>
+        </figure>
+
         <p>
-          No me queda más que agradecerles enormemente por "sostener la cuerda" para que yo pueda estar en el campo, contribuyendo a que la Palabra llegue a cada pueblo en la lengua que hablan y entienden. Agradezco sus oraciones, pues en todo momento he sentido su respaldo. Agradezco sus palabras de ánimo, que siempre llegan en el momento necesario, y sus ofrendas, que envían con fidelidad y sacrificio para sostenerme económicamente. Sigamos juntos haciendo la Misión de Dios, porque solo como un cuerpo, una sola iglesia, podremos culminar nuestra encomienda. Oro para que el Señor les retribuya en gran manera por el amor que me demuestran en Él.
+          Posteriormente, viajé a la ciudad de Oaxaca, donde visité la Comunidad Cristiana "El Camino Oaxaca" para hablar sobre la misión de Dios y la necesidad de traducir Su palabra a diversas lenguas. Mi oración es que el Señor siga levantando a su iglesia en México para ir por los no alcanzados; es para mí un privilegio ser una herramienta en Sus manos.
         </p>
 
-        <p class="pt-2 font-medium text-teal-800">
-          Su hermano en Cristo,<br>
-          <span class="font-bold text-slate-900 text-lg">Agustino Martínez</span>
+        <!-- FOTO 5 -->
+        <figure class="my-8">
+          <img src="oaxaca.png" alt="En la Iglesia Comunidad Cristiana El Camino Oaxaca" class="rounded-xl shadow-md w-full object-cover">
+          <figcaption class="text-center text-sm text-slate-500 mt-3 font-medium">En la Iglesia Comunidad Cristiana "El Camino Oaxaca"</figcaption>
+        </figure>
+
+        <!-- SECCIÓN 5 -->
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="plane-takeoff" class="w-6 h-6"></i> Próximo Viaje al Perú
+        </h2>
+        <p>
+          En la madrugada del sábado 25 de julio, vuelo nuevamente hacia el Perú para servir allá el resto del año. Durante los primeros tres días estaré entre los yáneshas, capacitando a un nuevo integrante del equipo que realizará la labor de retrotraducción. Después viajaré a otra parte de la selva para estar con los nomatsigengas, donde, junto a hermanos de la Iglesia Bautista Getsemaní de Cholula, estaremos sirviendo a la comunidad. Tras cuatro días allí, dejaré al grupo para volver cinco días más con los yáneshas.
         </p>
+        <p>
+          Les ruego que oren por mí, para que el Señor me guarde, me sostenga y provea de todo lo necesario para esta primera etapa de mi estancia en Perú, este camino es de fe y confianza en el Señor, aunque humanamente ahora no dispongo de todos los fondos para estar allá, sé que él irá proveyendo como siempre lo ha hecho, voy esperando y confiando en Él.
+        </p>
+
+        <!-- SECCIÓN 6 -->
+        <h2 class="text-2xl font-bold text-teal-800 flex items-center gap-2 mt-10 mb-4 border-b pb-2">
+          <i data-lucide="globe" class="w-6 h-6"></i> Encuentro de Líderes Juveniles 2027
+        </h2>
+        <p>
+          Les adelanto también que he sido nominado para participar en el encuentro mundial que el Movimiento de Lausana está organizando para el 2027 en Brasil. Este evento concentrará a 1200 líderes emergentes (de entre 25 y 35 años) de todo el mundo, con el fin de impactar la misión cristiana global de las próximas décadas. Por mi parte, integraré la mesa de Acceso Mundial a las Escrituras, para evaluar los avances y necesidades en esta área.
+        </p>
+        <p>
+          Ayúdenme a orar por esto, para que el Señor me use para Su gloria y honra, y para que Él provea los recursos necesarios. El viaje implicará una inversión de alrededor de 1500 dólares (aproximadamente 26,000 pesos mexicanos). Si el Señor pone en su corazón contribuir para este viaje, será de gran bendición.
+        </p>
+
+        <!-- FOTO 6 -->
+        <figure class="my-8">
+          <img src="lausana.png" alt="Cuarto Encuentro de Líderes Jóvenes" class="rounded-xl shadow-md w-full object-cover">
+        </figure>
+
+        <!-- DESPEDIDA -->
+        <div class="mt-12 bg-slate-50 p-6 rounded-xl border border-slate-200">
+          <p>
+            Como siempre, queridos hermanos, es un gusto compartirles lo que el Señor sigue haciendo y Su obra entre las naciones. Somos un cuerpo, la Iglesia de Cristo, y como uno solo, juntos llevamos las Buenas Nuevas a toda nación, etnia y lengua, cada quien desde su trinchera. Mi servicio a Dios solo es posible porque ustedes me sostienen por medio de sus oraciones, palabras de ánimo y ofrendas; sin esta unidad, nada de esto se lograría, son instrumento en manos del Señor para mostrarme su fidelidad. Me despido deseando que nuestro Señor les retribuya grandemente por su amor y generosidad hacia mí.
+          </p>
+          <p class="font-bold text-teal-900 mt-6">
+            Su hermano en Cristo,<br>
+            <span class="text-xl font-serif">Agustino Martínez</span>
+          </p>
+        </div>
       </div>
 
-      <!-- BLOQUES DE MOTIVOS DE AGRADECIMIENTO Y PETICIONES DE ORACIÓN -->
-      <div class="mt-10 grid md:grid-cols-2 gap-6 border-t border-slate-100 pt-8">
-        
-        <!-- AGRADECIMIENTOS -->
-        <div class="bg-emerald-50/60 border border-emerald-200 rounded-xl p-5">
-          <h3 class="font-bold text-emerald-900 flex items-center gap-2 text-lg mb-3">
-            <i data-lucide="sparkles" class="w-5 h-5 text-emerald-600"></i>
+      <!-- SECCIÓN DE ORACIÓN Y AGRADECIMIENTO (TARJETAS DIVIDIDAS) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+        <!-- Agradecimientos -->
+        <div class="bg-teal-50 p-6 rounded-2xl border border-teal-100 shadow-sm">
+          <h3 class="text-xl font-bold text-teal-900 mb-4 flex items-center gap-2">
+            <i data-lucide="heart-handshake" class="w-6 h-6 text-teal-600"></i>
             Motivos de Agradecimiento
           </h3>
-          <ul class="space-y-2 text-sm text-emerald-950">
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por proveer los medios y la conexión a internet para impartir el curso de Semántica desde zonas difíciles en México y Perú.</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por el gozo de ver el aprendizaje de los traductores latinoamericanos, a pesar de sus limitaciones de energía eléctrica e internet.</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por la llegada segura a Lima y el traslado sin contratiempos hasta la comunidad Unión de la Selva.</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por el tiempo provechoso enseñando a los hermanos yáneshas.</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por Su guía y por obrar el milagro de cumplir los requisitos de manera extemporánea para la beca de hebreo en Jerusalén.</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-500 font-bold">•</span> Por el amor, las oraciones, las palabras de ánimo y el sustento económico fiel de los hermanos que apoyan el ministerio.</li>
+          <ul class="space-y-3 text-teal-800 text-sm">
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"></i> <span>Por el avance en la traducción del NT al mazateco y la definición del presupuesto.</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"></i> <span>Por la exitosa culminación del Diplomado y los 40 estudiantes capacitados, incluyendo los que pronto irán al campo misionero.</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"></i> <span>Por el excelente inicio del curso de Semántica para traductores de ALTI.</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"></i> <span>Por la oportunidad y bendición de visitar iglesias en Puebla y Oaxaca.</span></li>
           </ul>
         </div>
-
-        <!-- PETICIONES DE ORACIÓN -->
-        <div class="bg-amber-50/60 border border-amber-200 rounded-xl p-5">
-          <h3 class="font-bold text-amber-900 flex items-center gap-2 text-lg mb-3">
-            <i data-lucide="heart-handshake" class="w-5 h-5 text-amber-600"></i>
-            Peticiones de Oración
-          </h3>
-          <ul class="space-y-2 text-sm text-amber-950">
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Para que pronto se tenga el presupuesto de impresión, se pueda iniciar la recaudación y la comunidad tenga la Palabra en sus manos.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Por los dos grupos de estudiantes que continúan el curso y por los maestros asignados que lo estarán impartiendo.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Por la pronta conclusión de esta obra de construcción en la base misionera entre los nomatsigengas.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Por la salud, fortaleza y adaptación tecnológica de los traductores yáneshas.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Para que el Estado de Israel emita pronto la visa necesaria para los 9 meses de estudio.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Por el viaje a México en unas semanas, los trámites finales pendientes y el viaje definitivo a Israel en la segunda semana de octubre. Que el Señor siga abriendo el camino.</li>
-            <li class="flex items-start gap-2"><span class="text-amber-500 font-bold">•</span> Por gracia y sabiduría para el proceso de adaptación a una nueva cultura, alimentación y el aprendizaje exclusivo del idioma hebreo.</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- DESCARGA EN VERSIÓN PDF -->
-      <div class="mt-8 p-4 bg-teal-50 border border-teal-200 rounded-xl flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <i data-lucide="file-text" class="w-8 h-8 text-teal-600"></i>
-          <div>
-            <p class="font-bold text-teal-900 text-sm">Descargar Carta en PDF</p>
-            <p class="text-xs text-teal-700">Obtén la versión diseñada para imprimir o compartir.</p>
-          </div>
-        </div>
-        <a href="#" target="_blank" class="px-4 py-2 bg-teal-700 hover:bg-teal-800 text-white rounded-lg text-xs font-semibold transition-colors flex items-center gap-1.5">
-          <i data-lucide="download" class="w-3.5 h-3.5"></i>
-          Descargar
-        </a>
-      </div>
-
-    </article>
-
-    <!-- DATOS DE CONTACTO Y BANCARIOS (AL FINAL DE PÁGINA COM EN JULIO) -->
-    <section class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 space-y-6">
-      <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-3">
-        <i data-lucide="wallet" class="w-5 h-5 text-teal-600"></i>
-        Información de Apoyo y Contacto
-      </h3>
-      
-      <div class="grid md:grid-cols-2 gap-6 text-sm">
         
-        <!-- DATOS BANCARIOS -->
-        <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
-          <h4 class="font-bold text-teal-800 uppercase text-xs tracking-wider">Datos Bancarios para Ofrendas</h4>
-          <p class="text-slate-600"><span class="font-semibold text-slate-800">Titular:</span> Agustino Martínez Vázquez</p>
-          <p class="text-slate-600"><span class="font-semibold text-slate-800">Banco:</span> BBVA / México</p>
-          <p class="text-slate-600"><span class="font-semibold text-slate-800">CLABE Interbancaria:</span> 012 180 015 123 456 789</p>
-          <p class="text-slate-600"><span class="font-semibold text-slate-800">Número de Cuenta:</span> 151 234 5678</p>
+        <!-- Peticiones de Oración -->
+        <div class="bg-orange-50 p-6 rounded-2xl border border-orange-100 shadow-sm">
+          <h3 class="text-xl font-bold text-orange-900 mb-4 flex items-center gap-2">
+            <i data-lucide="sun" class="w-6 h-6 text-orange-600"></i>
+            Motivos de Oración
+          </h3>
+          <ul class="space-y-3 text-orange-800 text-sm">
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Por la recaudación de fondos para la publicación del NT en mazateco.</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Por los hermanos del curso de Semántica, para que superen sus limitaciones técnicas y del idioma.</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Por protección, provisión financiera y dirección para mi servicio en Perú con los yáneshas y nomatsigengas.</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5"></i> <span>Por la provisión de los recursos ($1,500 dólares) y dirección en el Encuentro de Líderes Juveniles 2027 en Brasil.</span></li>
+          </ul>
         </div>
-
-        <!-- CONTACTO DIRECTO -->
-        <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
-          <h4 class="font-bold text-teal-800 uppercase text-xs tracking-wider">Contacto Directo</h4>
-          <p class="text-slate-600 flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4 text-slate-400"></i>
-            agustino.martinez@ejemplo.com
-          </p>
-          <p class="text-slate-600 flex items-center gap-2">
-            <i data-lucide="phone" class="w-4 h-4 text-slate-400"></i>
-            +52 (55) 1234 5678 / +51 987 654 321
-          </p>
-          <p class="text-slate-500 text-xs pt-2 border-t border-slate-200">
-            Si deseas sumarte a la red de oración o apoyo mensual, no dudes en escribirnos directamente.
-          </p>
-        </div>
-
       </div>
-    </section>
+      
+    </article>
   </main>
-
-  <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm border-t border-slate-800">
-    <p>© 2026 Agustino Martínez. Todos los derechos reservados.</p>
-  </footer>
-
+  
   <script>
+    // Inicializar los iconos de Lucide
     lucide.createIcons();
   </script>
 </body>
